@@ -18,24 +18,17 @@
  * along with SampleUnitTests.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.example.sample.unit.test.SampleUnitTestsSB_154;
+package com.example.sample.unit.test.SampleUnitTestsSB_154.dao;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import java.sql.SQLException;
+import java.util.Map;
 
-/**
- * Spring Boot application main class.
- * @author Gabriel
- *
- */
-@SpringBootApplication
-public class Application {
+public interface ExampleDAO {
 
 	/**
-	 * Initializes the Boot Spring application.
-	 * @param args
+	 * Finds all names in the name table.
+	 * @return
+	 * @throws SQLException
 	 */
-	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
-	}
+	Map<String,String> findAll() throws SQLException;
 }

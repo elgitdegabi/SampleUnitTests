@@ -18,7 +18,7 @@
  * along with SampleUnitTests.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.example.sample.unit.test.SampleUnitTestsSB_138.dao;
+package com.example.sample.unit.test.SampleUnitTestsSB_154.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

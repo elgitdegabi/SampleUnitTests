@@ -17,25 +17,33 @@
  * You should have received a copy of the GNU General Public License
  * along with SampleUnitTests.  If not, see <http://www.gnu.org/licenses/>.
  *
- */
-package com.example.sample.unit.test.SampleUnitTestsSB_154;
+ */package com.example.sample.unit.test.SampleUnitTestsSB_154.service;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import java.sql.SQLException;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.sample.unit.test.SampleUnitTestsSB_154.dao.ExampleDAO;
 
 /**
- * Spring Boot application main class.
+ * Services for the example.
  * @author Gabriel
  *
  */
-@SpringBootApplication
-public class Application {
-
+@Service
+public class ExampleService {
+	
+	@Autowired
+	ExampleDAO exampleDAO;
+	
 	/**
-	 * Initializes the Boot Spring application.
-	 * @param args
+	 * Gets all configured names.
+	 * @return
+	 * @throws SQLException
 	 */
-	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
+	public Map<String,String> getAllNames() throws SQLException {
+		return exampleDAO.findAll();
 	}
 }

@@ -18,7 +18,7 @@
  * along with SampleUnitTests.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.example.sample.unit.test.SampleUnitTestsSB_138.controller;
+package com.example.sample.unit.test.SampleUnitTestsSB_154.controller;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -32,7 +32,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.sample.unit.test.SampleUnitTestsSB_138.service.ExampleService;
+import com.example.sample.unit.test.SampleUnitTestsSB_154.service.ExampleService;
 
 /**
  * Handles the request for the example. 
